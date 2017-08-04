@@ -1,0 +1,46 @@
+CREATE/UPDATE NOTE
+
+Method Type
+POST
+
+Request URL
+http://localhost:8080/createNote
+
+Headers
+[{"key":"Accept","value":"application/json","description":""}]
+[{"key":"Content-Type","value":"application/json","description":""}]
+
+Body
+{"id":"N001",
+"userId":"USER001",
+"title":"Shopping List",
+"content":"Grocery",
+"creationDateTime":null,
+"modificationDateTime":null,
+"archived":false,
+"label":"Shopping"}
+-------------------------------------------------------------------------------------
+GET NOTE
+
+Method Type
+GET
+
+Request URL
+http://localhost:8080/getNote/1
+
+-------------------------------------------------------------------------------------
+DELETE NOTE
+
+Method Type
+POST
+
+Request URL
+http://localhost:8080/deleteNote
+
+
+Headers
+[{"key":"Accept","value":"application/json","description":""}]
+[{"key":"Content-Type","value":"application/json","description":""}]
+
+Body
+{"id":1}
